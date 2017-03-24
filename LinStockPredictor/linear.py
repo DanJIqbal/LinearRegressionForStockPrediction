@@ -37,7 +37,7 @@ def predict_price(dates, prices, x):
 	plt.title('Linear Regression')
 	plt.legend()
 	plt.show()
-	
+	plt.savefig('result.png')
 	return linear_mod.predict(x)[0][0], linear_mod.coef_[0][0], linear_mod.intercept_[0]
 
 get_data('AAPL.csv') # calling get_data method by passing the csv file to it
